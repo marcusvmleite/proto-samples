@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package places;
+
+import "basics-ii/street.proto";
+
+message Building {
+    string name = 1;
+    int32 number = 2;
+    places.Street street = 3;
+}

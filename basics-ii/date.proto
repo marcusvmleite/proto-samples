@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package util.date;
+
+message Date {
+    int32 year = 1;
+    //There is now way using Protcol Buffers to enforce a range, so take care!
+    int32 month = 2;
+    int32 dat = 3;
+}

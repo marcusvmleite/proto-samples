@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+message Date {
+    int32 year = 1;
+    //There is now way using Protocol Buffers to enforce a range, so take care!
+    int32 month = 2;
+    int32 day = 3;
+}
